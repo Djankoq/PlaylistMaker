@@ -3,9 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#3772E7"
+    android:background="@color/blue"
     android:orientation="vertical"
-    android:padding="14dp">
+    android:padding="@dimen/radius_and_marging">
     <FrameLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
@@ -16,8 +16,8 @@
             android:layout_gravity="start"
             android:fontFamily="@font/ys_display"
             android:text="@string/app_name"
-            android:textColor="#FFFFFF"
-            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/primary_text_size"
             android:layout_marginBottom="26dp"
             android:textStyle="bold"
             />
@@ -30,7 +30,7 @@
         >
 
         <Button
-            android:id="@+id/search"
+            android:id="@+id/searchButton"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -39,51 +39,51 @@
             android:text="@string/search"
             android:textAllCaps="false"
             android:textColor="@color/black"
-            android:textSize="22dp"
-            app:cornerRadius="16dp"
+            android:textSize="@dimen/primary_text_size"
+            app:cornerRadius="@dimen/radius_and_marging"
             app:icon = "@drawable/search_icon"
             app:iconGravity = "textStart"
-            app:iconPadding = "10dp"
+            app:iconPadding = "@dimen/icon_padding"
             app:iconTint = "@color/black"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="@dimen/radius_and_marging"
             />
 
         <Button
-            android:id="@+id/media"
+            android:id="@+id/mediaButton"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:backgroundTint="@color/white"
             android:text="@string/Media"
             android:textAllCaps="false"
-            android:textSize="22dp"
+            android:textSize="@dimen/primary_text_size"
             android:fontFamily="@font/ys_display"
             android:textColor="@color/black"
-            app:cornerRadius="16dp"
+            app:cornerRadius="@dimen/radius_and_marging"
             app:icon = "@drawable/media_icon"
             app:iconGravity = "textStart"
-            app:iconPadding = "10dp"
+            app:iconPadding = "@dimen/icon_padding"
             app:iconTint = "@color/black"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="@dimen/radius_and_marging"
             />
         <Button
-            android:id="@+id/setting"
+            android:id="@+id/settingButton"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:backgroundTint="@color/white"
             android:text="@string/Settings"
             android:textAllCaps="false"
-            android:textSize="22dp"
+            android:textSize="@dimen/primary_text_size"
             android:fontFamily="@font/ys_display"
             android:textColor="@color/black"
-            app:cornerRadius="16dp"
+            app:cornerRadius="@dimen/radius_and_marging"
             app:icon = "@drawable/settings_icon"
             app:iconGravity = "textStart"
-            app:iconPadding = "10dp"
+            app:iconPadding = "@dimen/icon_padding"
             app:iconTint = "@color/black"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="14dp"
+            android:layout_marginTop="@dimen/radius_and_marging"
+            android:layout_marginBottom="@dimen/radius_and_marging"
             />
     </LinearLayout>
 
